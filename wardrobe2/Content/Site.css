@@ -1,0 +1,74 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+/*HOME PAGE*/
+/* Nav bar background */
+.navbar-inverse {
+    background-color: white !important;
+    border-color: white;
+}
+
+/*.navbar-brand { color: black !important }
+.nav.navbar-nav li a { color: black; }*/
+
+
+
+/*Images*/
+.sizeThemUp {
+    width: 250px;
+    height: 170px;
+}
+
+.thumbSize {
+    height: 200px;
+    border-radius: 15px;
+}
+
+.right {
+    float: right;
+    padding: 0px 20px 20px 0px;
+}
+
+/* FONT COLOR */
+.nameColor {
+    color: #FF6BB5;
+}
+
+.typeColor {
+    color: #FF6BB5;
+}
+
+.colorColor {
+    color: #FF6BB5;
+}
+
+.seasonColor {
+    color: #FF6BB5;
+}
+
+.occasionColor {
+    color: #FF6BB5;
+}
