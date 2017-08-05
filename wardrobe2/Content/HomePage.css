@@ -1,0 +1,30 @@
+﻿body {
+    background-image: url('Images/bigbasicbro.jpg');
+    background-size: cover;
+}
+
+.caption {
+    text-align: center;
+}
+
+.caption span.border {
+    background-color: white;
+    color: black;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+
+ul {
+  padding:0 0 0 0;
+  margin:0 0 0 0;
+}
+ul li {
+  list-style:none;
+  margin-bottom:25px;
+}
+ul li img {
+  cursor: pointer;
+}
