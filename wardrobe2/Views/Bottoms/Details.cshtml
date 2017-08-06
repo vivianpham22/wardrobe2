@@ -11,7 +11,7 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.BottomName)
+            Name:
         </dt>
 
         <dd>
@@ -19,7 +19,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.BottomType)
+            Type:
         </dt>
 
         <dd>
@@ -27,7 +27,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.BottomColor)
+            Color:
         </dt>
 
         <dd>
@@ -35,7 +35,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.BottomSeason)
+            Season:
         </dt>
 
         <dd>
@@ -43,7 +43,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.BottomOccasion)
+            Occassion:
         </dt>
 
         <dd>
@@ -51,13 +51,17 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.BottomPhoto)
+            @*@Html.DisplayNameFor(model => model.BottomPhoto)*@
         </dt>
 
         <dd>
-            <a target="_blank" href="@Html.DisplayFor(model => model.BottomPhoto)">
-                <img class="img-responsive right" src="@Html.DisplayFor(model => model.BottomPhoto)" />
-            </a>
+            <div class="container">
+                <div class="sizeThemUp">
+                    <a target="_blank" href="@Html.DisplayFor(model => model.BottomPhoto)">
+                        <img class="img-responsive right" src="@Html.DisplayFor(model => model.BottomPhoto)" />
+                    </a>
+                </div>
+            </div>
         </dd>
 
     </dl>

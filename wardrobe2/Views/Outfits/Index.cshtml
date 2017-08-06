@@ -9,22 +9,6 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Accessory.AccessoryName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Bottom.BottomName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Sho.ShoeName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Top.TopName)
-        </th>
-        <th></th>
-    </tr>
 
 @foreach (var item in Model) {
     <tr>
@@ -47,5 +31,3 @@
         </td>
     </tr>
 }
-
-</table>
