@@ -4,60 +4,43 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<center><img src="~/Content/Images/broaccess.jpg" /></center>
 
+<div class="container">
+@foreach (var item in Model)
+{
+    <div class="col-md-6 col-lg-4">
+        <div class="thumbnail thumbSize">
+            <h4>
+                <a target="_blank" href="@Html.DisplayFor(modelItem => item.AccessoryPhoto)">
+                    <img class="img-responsive right" src="@Html.DisplayFor(modelItem => item.AccessoryPhoto)" width="150" height="100" />
+                </a>
+            </h4>
+            <h5>
+                <b class="nameColor">Name:</b> @Html.DisplayFor(modelItem => item.AccessoryName)
+            </h5>
+            <h5>
+                <b class="typeColor">Type:</b> @Html.DisplayFor(modelItem => item.AccessoryType)
+            </h5>
+            <h5>
+                <b class="colorColor">Color:</b> @Html.DisplayFor(modelItem => item.AccessoryColor)
+            </h5>
+            <h5>
+                <b class="seasonColor">Season:</b> @Html.DisplayFor(modelItem => item.AccessorySeason)
+            </h5>
+            <h5>
+                <b class="occasionColor">Occassion:</b> @Html.DisplayFor(modelItem => item.AccessoryOccassion)
+            </h5>
+
+            <p>
+                @Html.ActionLink("Edit", "Edit", new { id = item.AccessoryID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.AccessoryID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.AccessoryID })
+            </p>
+        </div>
+    </div>
+}
+</div>
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.AccessoryName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AccessoryType)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AccessoryColor)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AccessorySeason)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AccessoryOccassion)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AccessoryPhoto)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.AccessoryName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AccessoryType)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AccessoryColor)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AccessorySeason)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AccessoryOccassion)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AccessoryPhoto)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.AccessoryID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.AccessoryID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.AccessoryID })
-        </td>
-    </tr>
-}
-
-</table>

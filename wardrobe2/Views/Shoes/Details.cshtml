@@ -55,7 +55,9 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.ShoePhoto)
+            <a target="_blank" href="@Html.DisplayFor(model => model.ShoePhoto)">
+                <img class="img-responsive right" src="@Html.DisplayFor(model => model.ShoePhoto)" />
+            </a>
         </dd>
 
     </dl>
